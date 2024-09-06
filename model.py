@@ -21,7 +21,7 @@ CKPT_PATH = 'model.pth.tar'
 N_CLASSES = 14
 CLASS_NAMES = [ 'Atelectasis', 'Cardiomegaly', 'Effusion', 'Infiltration', 'Mass', 'Nodule', 'Pneumonia',
                 'Pneumothorax', 'Consolidation', 'Edema', 'Emphysema', 'Fibrosis', 'Pleural_Thickening', 'Hernia']
-DATA_DIR = './ChestX-ray14/images'
+DATA_DIR = r'C:\Users\mathialm\OneDrive - NTNU\Jobb\PhD\Poisoning\data\datasets\clean\CXR8\images\images'
 TEST_IMAGE_LIST = './ChestX-ray14/labels/test_list.txt'
 BATCH_SIZE = 64
 
@@ -127,3 +127,4 @@ class DenseNet121(nn.Module):
 
 if __name__ == '__main__':
     main()
+    print("test")
